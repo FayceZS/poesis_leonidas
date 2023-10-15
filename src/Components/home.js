@@ -38,8 +38,8 @@ const HomePage = () => {
   return (
     <div id="homePage">
       <div className="overlay"></div>
-      <h3 className="animate-charcter"> POESIS</h3>
-      <p id="introText">Des mots sur vos émotions</p>
+      <h3 className="animate-charcter"> LEONIDAS</h3>
+      <p id="introText">The preferred belgian chocolate</p>
       
       {isLoggedIn ? (
         <PoemForm />
