@@ -88,10 +88,10 @@ const Navigation = () => {
         </Link>
         {isLoggedIn && (
           <div>
-            <div id="creditsDiv">
+            {/* <div id="creditsDiv">
               <img src={iconCredits}  onClick={openModal}/>
               {!creditsLoading ? <p onClick={openModal}>{credits}</p> : <p>0</p>}
-            </div>
+            </div> */}
             <Modal
               isOpen={modalIsOpen}
               onRequestClose={resetOption}
