@@ -39,7 +39,7 @@ const HomePage = () => {
     <div id="homePage">
       <div className="overlay"></div>
       <h3 className="animate-charcter"> LEONIDAS</h3>
-      <p id="introText">The preferred belgian chocolate</p>
+      <p id="introText">MAÎTRE CHOCOLATIER 1913</p>
       
       {isLoggedIn ? (
         <PoemForm />

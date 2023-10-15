@@ -21,7 +21,7 @@ body{
   align-items: space-between;
   /* background-image: url("./img/layered-waves-haikei.svg"); */
 
-  background-image: url("./img/backgroundTest.svg");
+  background-image: url("./img/backgroundHome.svg");
   background-size:cover;
   background-repeat: no-repeat;
   
@@ -75,7 +75,7 @@ font-size: 18px;
   margin-top : 100px!important;
   margin-bottom: 100px;
   width : 650px!important;
-  box-shadow: #AC837A 0px 3px 12px;
+  box-shadow: #bda27d 0px 3px 12px;
   background-color: #ffffff;
 }
 
