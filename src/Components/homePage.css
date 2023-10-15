@@ -61,10 +61,18 @@
     animation: textclip 7s linear infinite;
     display: inline-block;
     font-size: 50px;
+    font-family: 'Harbour';
 }
 
 @keyframes textclip {
     to {
         background-position: 200% center;
     }
+}
+
+@font-face {
+    font-family: 'Harbour';
+    src: url('../fonts/Harbour\ Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
