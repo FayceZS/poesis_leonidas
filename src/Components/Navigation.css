@@ -1,0 +1,128 @@
+header {
+
+    display: flex;
+    border-bottom: 1px solid #d2d2d7;
+    justify-content: space-around;
+    align-items: center;
+    width: auto;
+    height: 80px;
+    background-color: #ffffff;
+}
+
+header a img{
+    height: 75px;
+        width: 110px;
+}
+
+header div {
+    width : 300px;
+    display: flex;
+    justify-content: space-around;
+}
+
+header div a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color : black;
+    justify-content: center;
+    align-items: center;
+}
+
+header div img {
+    height: 45px;
+    width: 45px;
+}
+
+header div a img {
+    height : 45px;
+    width : 45px;
+}
+
+#iconProfil{
+    padding-top: 5px;
+}
+
+#creditsDiv{
+    display: flex;
+    flex-direction: column;
+    width : 60px;
+    justify-content: space-between;
+    align-items: space-between;
+    margin-top : 20px;
+    cursor: pointer;
+
+}
+
+
+#creditsDiv p{
+    text-align: center;
+    width: 45px;
+}
+
+#creditsDiv p:hover {
+   color : blue;
+}
+
+.ReactModal__Overlay{
+    display : flex;
+}
+
+.creditsContainer{
+    min-height : 50%;
+    height : max-content;
+    width : 60%;
+    margin : auto;
+    background-color: white;
+    border : 1px solid black;
+    padding : 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.creditsContainer img{
+    width : 45px;
+    height : 45px;
+    right : 0;
+    top:0;
+    cursor : pointer;
+    z-index: 1;
+    position : absolute
+}
+
+#purchaseTitle{
+    margin-top : 30px;
+    text-align: center;
+    font-family: 'Roboto';
+    display : none;
+}
+
+.purchase-options{
+    display : flex;
+    flex-direction : column;
+    height : 200px;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-top : 50px; */
+}
+
+.purchase-buttons{
+    width : 250px;
+    background-color: white;
+    color : #2f1b0c;
+    border: 1px solid #2f1b0c;
+    transition: all 0.5s;
+    cursor: pointer;
+    height : 50px
+}
+
+.purchase-buttons:hover{
+    background-color: #c9a0dc;
+    color : white;
+    scale : 1.07;
+    border : 1px solid black;
+}
+

@@ -1,0 +1,38 @@
+/* .loadingDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin : auto;
+} */
+
+#loadingDiv{
+    /* background-image: url(../img/loadingBackground.svg); */
+    background-size: cover;
+    width : 100%;
+    height : 100%;
+    display : flex;
+    flex-direction : column;
+    box-shadow: none!important;
+}
+
+#loadingTitle{
+    margin-bottom: 0px;
+    margin-top : 25px;
+    text-align: center;
+    font-family: 'Roboto';
+}
+
+#loadingLogo{
+    margin : auto;
+    height : 250px;
+    width : 250px;
+}
+
+
+
+#loadingPoem{
+    width : 80%!important;
+    
+    margin : auto;
+}

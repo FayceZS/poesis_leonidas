@@ -1,0 +1,254 @@
+body{
+  display: flex;
+  flex-direction: column;
+  background: #F9F7F3;
+}
+
+#root{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.App{
+  min-height : 100vh;
+  height : 100%;
+  width : 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
+  /* background-image: url("./img/layered-waves-haikei.svg"); */
+
+  background-image: url("./img/backgroundTest.svg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  
+}
+
+#poesis a img{
+  height: 250px;
+  width : 280px;
+}
+
+
+#basic-nav-dropdown{
+color : #02111B;
+font-size: 18px;
+}
+
+#formContainer{
+  margin : auto!important;
+  margin-top : 70px;
+  min-height: 350px;
+  height : auto;
+  width : 650px;
+  /* border : 1px solid #b63838; */
+  background-color: #fbfbfd!important;
+  border-radius : 20px;
+  border : 1px solid #cecece;
+  /* padding : 30px; */
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+
+}
+
+#introPoesis{
+  height : 350px;
+  width : 350px;
+  margin : auto;
+}
+
+.authFormDiv{
+  background-color: #ffffff;
+  border-top : 1px solid black;
+}
+
+.container{
+  display : flex;
+  flex-direction: column;
+  padding : 20px;
+  margin-top : 100px!important;
+  margin-bottom: 100px;
+  width : 650px!important;
+  box-shadow: #AC837A 0px 3px 12px;
+  background-color: #ffffff;
+}
+
+
+
+.formCheckDiv{
+  margin-left:0px;
+  height : 200px;
+  padding-top : 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+form{
+  height : 100%;
+}
+
+.card{
+  height: 100%;
+  display: flex;
+  border : none!important;
+}
+
+.card-body{
+  display: flex!important;
+  flex-direction: column!important;
+  justify-content: space-between;
+  width : 100%;
+  align-self: stretch;
+  padding : 0;
+  margin: auto;
+  margin-bottom: 0!important;
+}
+
+.card-body img{
+  height : 80px;
+  width : 80px;
+  margin-top : 10px;
+  margin-bottom : 30px;
+}
+
+.form-label {
+  font-size: 22px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color : #222;
+}
+
+.formController {
+  display: flex;
+  flex-direction: column;
+  min-height : 300px;
+  align-items: stretch;
+  justify-content: flex-start;
+  align-items: flex-start;
+  opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.formController.show{
+  opacity: 1;
+}
+
+
+.formQuestion{
+  display: flex;
+  flex-direction: column;
+  
+}
+.form-control {
+  margin-bottom: 50px;
+  width : 200px;
+}
+
+.form-check{
+  width : max-content;
+  margin-top : 10px;
+  display: flex;
+  align-items: center;
+  padding: 0px!important;
+}
+
+.form-check input{
+  margin : auto!important;
+  margin-top: 10px!important;
+  margin-right : 8px!important;
+  align-self: center;
+  align-items: center;
+  height : 1.25em;
+  width : 1.25em;
+}
+
+.form-check-label{
+  font-size : 25px;
+  font-family: 'Open Sans', sans-serif;
+  color : #222;
+  
+}
+
+.d-flex{
+  margin-top : 30px;
+}
+
+.formPoem{
+  margin-bottom : 200px;
+  /* height : auto; */
+  display: flex;
+}
+
+.btn{
+  background-color: white;
+  border-radius : 10px;
+  padding : 20px;
+  color : #222;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bolder;
+  cursor: pointer;
+  border : 1px solid #cecece;
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.d-flex{
+  display : flex;
+  justify-content: space-between;
+  width : 100%;
+}
+
+
+
+
+#loadingTitle{
+  text-align: center;
+  width : 100%;
+  font-family: "Sacramento";
+  font-size : 32px;
+  margin-bottom : 50px;
+}
+
+
+
+
+.print-content {
+  text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+  #formContainer {
+    margin-top: 30px;
+    width: 90%;
+  }
+
+  .container {
+    margin-top: 50px !important;
+    width: 100% !important;
+  }
+
+  .formController {
+    min-height: auto;
+  }
+
+  .form-control {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  .d-flex {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .btn {
+    margin-bottom: 15px;
+  }
+}

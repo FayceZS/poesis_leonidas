@@ -1,0 +1,70 @@
+#homePage {
+    width: 90%;
+    background-color: #ffffff;
+    min-height: 750px;
+    height: auto;
+    margin: auto;
+    margin-top : 50px;
+    margin-bottom: 50px;
+    /* margin-top: 80px; */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    /* background-image: url('https://poesis.s3.us-east-2.amazonaws.com/backgroundLeonidas.png'); */
+    padding : 30px;
+    border-radius: 15px;
+    background-size: cover;
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
+}
+
+#homePageH1{
+    font-family: "Lato", Times, serif;
+    text-align: left;
+    font-size: 50px;
+    margin-top: 25px;
+    font-weight: lighter;
+    color: #222;
+}
+
+#introText {
+    font-family: "Lato", Times, serif;
+    text-align: left;
+    font-size: 18px;
+    margin-top: 25px;
+    width : 100%;
+    word-wrap: break-word;
+    margin : 0;
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
+    padding : 0px;
+    font-weight: 300;
+    
+}
+
+
+
+
+.animate-charcter {
+    text-transform: uppercase;
+    background-image: linear-gradient(-225deg,
+            #de608a 0%,
+            #de608ab8 29%,
+            #de608a59 67%,
+            #de608a 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 7s linear infinite;
+    display: inline-block;
+    font-size: 50px;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}

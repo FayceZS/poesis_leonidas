@@ -1,0 +1,23 @@
+.StripeElement{
+    padding : 50px;
+}
+
+.payButton{
+    background-color: #0d6efd;
+    color : white;
+    font-weight: bold;
+    padding : 20px;
+    border : grey;
+    margin : auto;
+    transition : 1s;
+    margin : auto;
+}
+
+.payButton:hover{
+    scale : 1,05;
+}
+
+.formPay{
+    display : flex;
+    flex-direction: column;
+}

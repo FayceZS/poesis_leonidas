@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+}
+
+.style-controls{
+    margin-top: 15px;
+    display: flex;
+    height : auto;
+    justify-content: space-between;
+    
+}
+
+.style-controls div{
+    display : flex;
+    flex-direction: column;
+}
+
+.style-controls div label{
+    margin-right : 10px;
+}
+
+.style-controls div input{
+    max-width : 100px;
+    padding-left : 12px;
+    padding-right : 12px;
+}
+
+.style-controls div select{
+        max-width: 100px;
+}
+
+.option-lato {
+    font-family: 'Lato', sans-serif;
+}
+
+.option-sacramento {
+    font-family: 'Sacramento', cursive;
+}
+
+.option-arial {
+    font-family: 'Arial', sans-serif;
+}
+
+.option-verdana {
+    font-family: 'Verdana', sans-serif;
+}
+
+.option-times {
+    font-family: 'Times New Roman', serif;
+}
+
+.option-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.option-dosis {
+    font-family: 'Dosis', sans-serif;
+}
+
+.option-lora {
+    font-family: 'Lora', serif;
+}
+
+.generatedPoemContainer {
+    height: max-content !important;
+    max-width: 100%;
+    margin: auto;
+}
+
+.generatedPoemButton {
+    width: 150px;
+    height: 45px;
+    text-align: center;
+    padding: 10px;
+}
+
+.print-content {
+    /* width: 105mm;
+    min-height: 138mm;
+    width:auto;
+    height:auto;
+     */
+
+    width: 105mm!important;
+    height: 147mm!important;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 20px;
+    page-break-inside: avoid;
+    border : 1px solid black;
+    margin : auto;
+}
+
+
+.cardBackground {
+    /* width: 105mm !important; */
+    /* min-height: 147mm !important; */
+    /* background-image: url("../img/poemBackground.jpg"); */
+    /* width:auto;
+    height:auto; */
+    background-size: contain!important;
+    /* border : 1px solid black; */
+}
+
+.cardBackground div{
+    font-family: 'Sacramento','Times New Roman', Times, serif;
+    font-weight : 500;
+}
+
+#imgBravo {
+    height: 32px;
+    width: 32px;
+    margin-left: 10px;
+}
+
+.bravoText {
+    font-family: 'Dosis', sans-serif;
+    background-color: #ffffff !important;
+    color : #222;
+
+}
+
+.poemLine{
+    margin-bottom: 0px;
+}
+
+@media print {
+
+    @page {
+            margin: 1cm;
+            width: 105mm !important;
+                min-height: 148mm !important;
+        }
+    .print-container {
+        width: 105mm !important;
+        min-height: 148mm !important;
+        
+        position: absolute;
+        top: 200;
+        right: 50;
+        overflow: hidden;
+       
+    }
+
+    .print-content div{
+        /* font-weight: bold;  */
+        color : black;
+        /* font-weight: 500; */
+        
+    }
+
+    .cardBackground{
+        border : none;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .generatedPoemContainer {
+        padding: 20px;
+    }
+
+    .generatedPoemButton {
+        width: 120px;
+        height: 40px;
+        font-size: 14px!important;
+    }
+
+    .generatedPoemButtonsDiv{
+            display : flex;
+    }
+
+    .print-content {
+        width: auto!important;
+        padding: 20px;
+    }
+
+    .cardBackground {
+        width: auto !important;
+        background-size: contain!important;
+        background-repeat: no-repeat;
+    }
+
+    #imgBravo {
+        height: 28px;
+        width: 28px;
+    }
+
+    .bravoText {
+        font-size: 14px;
+    }
+
+    .style-controls{
+            flex-direction: column;
+        }
+    .style-controls div{
+                    justify-content: space-between;
+                }
+
+    .style-controls div input{
+            width : 60px;
+        }
+}

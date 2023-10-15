@@ -1,0 +1,110 @@
+.authFormDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width : 70%;
+    border-top : 1px solid #9e557c;
+    border-bottom: 1px solid #9e557c;
+    padding: 35px;
+    margin : auto;
+    margin-top: 120px;
+box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.authForm{
+    width : 70%;
+    max-width: 400px;
+    border-top : 1px solid grey;
+    border-bottom : 1px solid grey;
+    padding : 15px;
+    margin-top : 30px;
+}
+
+.authForm div{
+    display: flex;
+    justify-content: space-between;
+    margin-top : 20px;
+}
+
+.authFormTitle{
+    font-family: 'Roboto', cursive;
+    font-weight: light;
+    font-size: 22px;
+    width : max-content;
+    margin : auto;
+    color : #222831;
+}
+
+.authFormButtons{
+    margin-top : 30px!important;
+}
+
+.authFormButtons button {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #9e557c;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #FFFFFF;
+    text-align: center;
+    transition: all 0.8s;
+background: #9e557c
+}
+
+.authFormButtons button:hover {
+    
+    background: #5C258D;
+}
+
+.error-message{
+    color : white;
+    background-color: red;
+    text-align : center;
+    margin-top: 15px;
+    padding : 12px;
+    
+
+}
+
+@media all and (max-width:30em) {
+    .authFormButtons button {
+        display: block;
+        margin: 0.4em auto;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .authFormDiv {
+        width: 90%;
+        margin-top: 60px;
+    }
+
+    .authForm {
+        width: 100%;
+        padding: 15px;
+        margin-top: 20px;
+    }
+
+    .authForm div {
+        flex-direction: column;
+    }
+
+    .authFormButtons {
+        flex-direction: column;
+    }
+
+    .authFormButtons button {
+        width: 150px;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+
+    .authFormTitle{
+        font-size : 14px!important;
+    }
+}

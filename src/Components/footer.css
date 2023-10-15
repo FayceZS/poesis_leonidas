@@ -1,0 +1,33 @@
+footer {
+    height: 200px;
+    /* background-color: #ffffff; */
+    width: 100% !important;
+    display: flex;
+    /* margin-top: 100px; */
+    border-top: 3px solid #ffcbcb;
+    background-color: #ffffff;
+}
+
+#footerDiv {
+    width: 30%;
+    height: 70%;
+    margin: auto;
+    border-top: 1px solid #ffcbcb;
+    border-bottom: 1px solid #ffcbcb;
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffffff !important;
+}
+
+#footerDiv ul {
+    list-style: none;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: auto
+}
+
+#footerDiv ul li a {
+    text-decoration: none;
+    color : black;
+}
