@@ -22,7 +22,7 @@ body{
   /* background-image: url("./img/layered-waves-haikei.svg"); */
 
   background-image: url("./img/backgroundHome.svg");
-  background-size:cover;
+  background-size:contain;
   background-repeat: no-repeat;
   
 }
