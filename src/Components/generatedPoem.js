@@ -256,8 +256,7 @@ const updateCredits = async () => {
             >
               Recommencer
             </Button>
-            {credits > 0 ? (
-                <ReactToPrint
+            <ReactToPrint
   trigger={() => (
     <Button
       type="button"
@@ -269,19 +268,8 @@ const updateCredits = async () => {
     </Button>
   )}
   content={() => poemRef.current}
-  onAfterPrint={updateCredits}
+  
 />
-                ) : (
-                  <Button
-                    type="button"
-                    variant="success"
-                    className="generatedPoemButton"
-                    disabled={loading} // also disable the print button while the request is being processed
-                    onClick={() => alert("Désolé, vous n'avez pas suffisamment de crédits pour imprimer.")}
-                  >
-                    Imprimer
-                  </Button>
-                )}
                 
              
           </div>
