@@ -4,7 +4,7 @@ footer {
     width: 100% !important;
     display: flex;
     /* margin-top: 100px; */
-    border-top: 3px solid #bda27d;
+    border-top: 3px solid #06255b;
     background-color: #ffffff;
 }
 
@@ -12,8 +12,8 @@ footer {
     width: 30%;
     height: 70%;
     margin: auto;
-    border-top: 1px solid #bda27d;
-    border-bottom: 1px solid #bda27d;
+    border-top: 1px solid #06255b;
+    border-bottom: 1px solid #06255b;
     display: flex;
     justify-content: space-around;
     background-color: #ffffff !important;

@@ -15,6 +15,9 @@ import woman from "../img/woman.png"
 import mom from "../img/mom.png"
 import retraite from "../img/retraite.png"
 import drame from "../img/drame.png"
+import pereNoel from "../img/pereNoel.png"
+import happyNewYear from "../img/happyNewYear.png"
+
 const backendUrl = "https://pure-stream-14786.herokuapp.com/generate-poem";
 
 // import ArrowBackIcon from '@mui/icons-material/ArrowBack';
@@ -223,6 +226,30 @@ useEffect(() => {
                     className="animate__animated animate__backInRight"
         />
         <img src={petitCoeur} id="petitCoeur" className="animate__animated animate__backInRight" alt="petit coeur"/>
+                </div>
+                <div className="occasionChoix">
+                  <Form.Check
+                type="radio"
+                id="option5"
+                name="options"
+                label="Un joyeux Noël"
+                onChange={(e) => setOccasion(e.target.value)}
+                    value="pour lui souhaiter un joyeux Noël"
+                    className="animate__animated animate__backInRight"
+        />
+                  <img src={pereNoel} className="animate__animated animate__backInRight" alt="Noël" />
+                </div>
+                <div className="occasionChoix">
+        <Form.Check
+                type="radio"
+                id="option2"
+                name="options"
+                label="Bonne année"
+                onChange={(e) => setOccasion(e.target.value)}
+                    value="pour lui souhaiter une bonne année 2024"
+                    className="animate__animated animate__backInRight"
+        />
+        <img src={happyNewYear} className="animate__animated animate__backInRight" alt="happyNewYear"/>
         </div>
         <div className="occasionChoix">
         <Form.Check
@@ -297,6 +324,7 @@ useEffect(() => {
         />
                   <img src={retraite} className="animate__animated animate__backInRight" alt="retraite" />
                 </div>
+                
                 <div className="occasionChoix">
         <Form.Check
                 type="radio"

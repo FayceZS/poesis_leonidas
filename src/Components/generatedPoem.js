@@ -78,6 +78,17 @@ const fetchUserBackgroundImage = async () => {
       setBackgroundImage(response.data.backgroundImageHommage);
       setLoading(false);
     }
+      else if (occasionRef.current === "pour lui souhaiter un joyeux Noël") {
+        // setBackgroundImage(response.data.backgroundImageFeteDesMeres);
+      setBackgroundImage(response.data.backgroundImageHommage);
+      setLoading(false);
+    }
+      
+    else if (occasionRef.current === "pour lui souhaiter une bonne année 2024") {
+        // setBackgroundImage(response.data.backgroundImageFeteDesMeres);
+      setBackgroundImage(response.data.backgroundImageHommage);
+      setLoading(false);
+    }  
     else {
       
       setLoading(false);
@@ -256,8 +267,7 @@ const updateCredits = async () => {
             >
               Recommencer
             </Button>
-            {credits >= 0 || null || undefined ? (
-                <ReactToPrint
+           <ReactToPrint
   trigger={() => (
     <Button
       type="button"
@@ -271,17 +281,7 @@ const updateCredits = async () => {
   content={() => poemRef.current}
   onAfterPrint={updateCredits}
 />
-                ) : (
-                  <Button
-                    type="button"
-                    variant="success"
-                    className="generatedPoemButton"
-                    disabled={loading} // also disable the print button while the request is being processed
-                    onClick={() => alert("Désolé, vous n'avez pas suffisamment de crédits pour imprimer.")}
-                  >
-                    Imprimer
-                  </Button>
-                )}
+
                 
              
           </div>
