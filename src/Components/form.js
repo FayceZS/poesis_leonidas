@@ -79,7 +79,8 @@ const PoemForm = () => {
     e.preventDefault();
     
   // Traitez les données du formulaire ici
-  const prompt = `Ecris mois un poème ${occasion} pour ${gender} qui s'appelle ${firstName} en t'inspirant de ${author}, ta réponse devra contenir uniquement le poème et rien d'autre, de plus le poème devra être mis en forme de façon HTML et le poème devra faire strictement 10 lignes ou moins et il devra être en français, il devra également comporter la signature de ${signataire} sur la dernière ligne.`;
+      const prompt = `Ecris mois un magnifique poème de maximum 8 vers (hors signature) ${occasion} pour ${gender} qui s'appelle ${firstName} en t'inspirant de ${author}, ta réponse devra contenir uniquement le poème et rien d'autre, de plus le poème devra être mis en forme de façon HTML et le poème devra faire strictement 10 lignes ou moins et il devra être en français, il devra également comporter la signature de ${signataire} sur la dernière ligne.`;
+
    // Appeler fetchPoem avec le prompt construit
   fetchPoem(prompt);
   // Réinitialisez les états du formulaire
