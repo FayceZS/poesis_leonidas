@@ -23,8 +23,8 @@ Modal.setAppElement('#root');
 
 const Navigation = () => {
   const { isLoggedIn, logout } = useContext(AuthContext);
-  const [credits, setCredits] = useState(0);
-  const [creditsLoading, setCreditsLoading] = useState(false);
+  // const [credits, setCredits] = useState(0);
+  // const [creditsLoading, setCreditsLoading] = useState(false);
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState(null);
 
@@ -51,34 +51,34 @@ const Navigation = () => {
     setModalIsOpen(false);
   };
 
-  const fetchCredits = async () => {
-  setCreditsLoading(true); // Début du chargement
-  try {
-    const token = localStorage.getItem('authToken');
+//   const fetchCredits = async () => {
+//   setCreditsLoading(true); // Début du chargement
+//   try {
+//     const token = localStorage.getItem('authToken');
 
-    const response = await axios.get(`${backendUrl}/auth/profile`, {
-      headers: {
-        'Authorization': `Bearer ${token}`,
-      },
-    });
-    console.log(response.data);
-    localStorage.setItem('mail', response.data.email);
-    setCredits(response.data.credits); // ici on met à jour l'état credits avec la valeur obtenue depuis la réponse de l'API
+//     const response = await axios.get(`${backendUrl}/auth/profile`, {
+//       headers: {
+//         'Authorization': `Bearer ${token}`,
+//       },
+//     });
+//     console.log(response.data);
+//     localStorage.setItem('mail', response.data.email);
+//     setCredits(response.data.credits); // ici on met à jour l'état credits avec la valeur obtenue depuis la réponse de l'API
 
-  } catch (error) {
-    console.log("Erreur");
-    console.error(error);
-  } finally {
-    setCreditsLoading(false); // Fin du chargement
-  }
-};
+//   } catch (error) {
+//     console.log("Erreur");
+//     console.error(error);
+//   } finally {
+//     setCreditsLoading(false); // Fin du chargement
+//   }
+// };
 
 
-  useEffect(() => {
-    if (isLoggedIn) {
-      fetchCredits();
-    }
-  }, [isLoggedIn]);
+  // useEffect(() => {
+  //   if (isLoggedIn) {
+  //     fetchCredits();
+  //   }
+  // }, [isLoggedIn]);
 
   return (
     <>
@@ -92,14 +92,14 @@ const Navigation = () => {
               <img src={iconCredits}  onClick={openModal}/>
               {!creditsLoading ? <p onClick={openModal}>{credits}</p> : <p>0</p>}
             </div> */}
-            <Modal
+            {/* <Modal
               isOpen={modalIsOpen}
               onRequestClose={resetOption}
               contentLabel="Recharger crédits"
               className="creditsContainer"
             >
               <img src={closeCredits} onClick={closeModal} />
-              {/* <h2 id="purchaseTitle">Acheter des crédits</h2> */}
+             
               {!selectedOption ? (
                 <div className="purchase-options">
                   <button className='purchase-buttons' onClick={() => purchaseOption(20, 29.99)}>
@@ -116,7 +116,7 @@ const Navigation = () => {
                 <PaymentModule fetchCredits={fetchCredits} credits={selectedOption?.credits} amount={selectedOption?.value} />
 
               )}
-            </Modal>
+            </Modal> */}
 
             <Link to="/user-profile">
               <img src={iconProfil} alt="icone profil" id="iconProfil" />
